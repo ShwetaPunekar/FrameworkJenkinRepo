@@ -1,5 +1,7 @@
 package com.comcast.crm.objectrepositoryutility;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 
 import org.openqa.selenium.WebElement;
@@ -99,6 +101,7 @@ public class LoginPage
 	public void loginToApp(String url, String username, String password)
 	{
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		//this is business library this is specific to business Or app
 		driver.get(url);
 		usernameEdt.sendKeys(username);
