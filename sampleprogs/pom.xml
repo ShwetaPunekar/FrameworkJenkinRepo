@@ -22,7 +22,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>testng_ST.xml</suiteXmlFile>
+						<suiteXmlFile>suite_smokeTest.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
@@ -43,7 +43,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>testng_RT.xml</suiteXmlFile>
+						<suiteXmlFile>suite_regionalRegressionTest.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
