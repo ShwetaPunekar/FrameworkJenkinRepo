@@ -29,6 +29,8 @@ import com.comcast.crm.generic.webdriverutility.WebDriverUtility;
 import com.comcast.crm.objectrepositoryutility.HomePage;
 import com.comcast.crm.objectrepositoryutility.LoginPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseClass 
 {
 	//====================================================================================================//
@@ -113,6 +115,7 @@ public class BaseClass
 		String BROWSER =System.getProperty("browser", fLib.getDataFromPropertiesFile("browser"));
 		if(BROWSER.equals("chrome"))
 		{
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		}
 		else if(BROWSER.equals("firefox"))
